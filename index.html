@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, ">
+    <title>Coffee!</title>
+
     <!--    bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1 class="text-center border-bottom py-3">Coffee!</h1>
+<header class="mb-5">
+    <h1 class="text-center py-3">Coffee!</h1>
     <br>
 </header>
 
 <!---- Left Container----->
-<main class="container row mx-auto">
-    <section class="col-6 row" id="coffees">
-<!--        <div class="col-6">c1</div>-->
-<!--        <div class="col-6">c2</div>-->
-
-    </section>
+<main class="container row mx-auto mt-5">
+    <div class="col-6 row bg-light opacity-50 rounded p-1 me-2" id="coffees">
+    </div>
 
     <!-----Right Container------->
     <section class="col-6">
@@ -28,7 +30,6 @@
 <!--            choose coffee by roast-->
             <label for="roast-selection">Roast</label>
             <select id="roast-selection" class="form-select">
-                <option>all</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
