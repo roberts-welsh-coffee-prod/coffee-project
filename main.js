@@ -33,12 +33,10 @@ function updateCoffees(e) {
 function updateCoffees2(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let coffee1 = coffeeInput.value.toLowerCase();
-    console.log(coffee1);
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (   (coffee.name.toLowerCase()).includes(coffee1)) {
+        if (coffee.name.toLowerCase().includes(coffee1)) {
             filteredCoffees.push(coffee);
-            console.log("YEAH");
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
