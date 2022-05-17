@@ -1,7 +1,7 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
+    var html = '<div class="col-6">';
     // html += '<td>' + coffee.id + '</td>';
     html += '<h4>' + coffee.name + '</h4>';
     html += '<span class="text-muted">' + coffee.roast + '</span>';
@@ -30,6 +30,20 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+function updateCoffees2(e) {
+    e.preventDefault(); // don't submit the form, we just want to update the data
+    let coffee1 = coffeeInput.value.toLowerCase();
+    console.log(coffee1);
+    var filteredCoffees = [];
+    coffees.forEach(function(coffee) {
+        if (   (coffee.name.toLowerCase()).includes(coffee1)) {
+            filteredCoffees.push(coffee);
+            console.log("YEAH");
+        }
+    });
+    tbody.innerHTML = renderCoffees(filteredCoffees);
+}
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -51,6 +65,9 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+
+let coffeeInput = document.getElementById("coffeeName");
+coffeeInput.addEventListener("input", updateCoffees2)
 
 tbody.innerHTML = renderCoffees(coffees);
 
