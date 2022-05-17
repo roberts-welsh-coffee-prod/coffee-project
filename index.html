@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee!</title>
 
     <!--    bootstrap link-->
@@ -21,7 +21,7 @@
 
 <!---- Left Container----->
 <main class="container row mx-auto mt-5">
-    <div class="col-6 row bg-light opacity-50 rounded p-1 me-2" id="coffees">
+    <div class="col-6 row bg-light p-2 text-dark bg-opacity-50 rounded me-2" id="coffees">
     </div>
 
     <!-----Right Container------->
@@ -30,6 +30,7 @@
 <!--            choose coffee by roast-->
             <label for="roast-selection">Roast</label>
             <select id="roast-selection" class="form-select">
+                <option value="1">All</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
@@ -41,7 +42,7 @@
 
 
 <!--            create new coffee-->
-            <input id="submit" type="submit" class="btn btn-primary w-100"/>
+            <input id="submit" type="submit" class="btn btn-warning w-100 "/>
         </form>
     </section>
 </main>

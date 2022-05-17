@@ -4,7 +4,7 @@ function renderCoffee(coffee) {
     var html = '<div class="col-6">';
     // html += '<td>' + coffee.id + '</td>';
     html += '<strong>' + coffee.name + '</strong>';
-    html += ' <span class="text-muted">' + coffee.roast + '</span>';
+    html += ' <span class="text-muted fs-6">' + coffee.roast + '</span>';
     html += '</div>';
 
     return html;
@@ -22,14 +22,20 @@ function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
-    coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
+    if (selectedRoast === "1") {
+        for (const coffee of coffees) {
             filteredCoffees.push(coffee);
         }
-    });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    } else {
+        coffees.forEach(function (coffee) {
+            if (coffee.roast === selectedRoast) {
+                filteredCoffees.push(coffee);
+            }
+        });
+        tbody.innerHTML = renderCoffees(filteredCoffees);
+    }
 }
-
+//  search input function
 function updateCoffees2(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let coffee1 = coffeeInput.value.toLowerCase();

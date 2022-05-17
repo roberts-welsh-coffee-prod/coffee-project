@@ -9,13 +9,14 @@ header h1{
 .container{
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: black;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 div #coffees{
     background: red;
 }
 
 body{
-background-image: url("img/cofeebackground.jpg");
+    background-image: url("img/cofeebackground.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
