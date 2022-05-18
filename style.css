@@ -11,9 +11,6 @@ header h1{
     color: black;
     font-size: 1.5em;
 }
-div #coffees{
-    background: red;
-}
 
 body{
     background-image: url("img/cofeebackground.jpg");
