@@ -1,7 +1,7 @@
 
 header h1{
     font-family: 'Lobster', cursive;
-    font-size: 6em;
+    font-size: 7em;
     color: white;
     text-shadow: 4px 4px black;
     background-image: url("img/coffeHeader.jpg");
@@ -14,3 +14,6 @@ header h1{
     font-size: 1.5em;
 }
 
+.card {
+    font-family: 'Lobster', cursive;
+}

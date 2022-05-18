@@ -1,10 +1,10 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    let html = '<div class="col-6">';
+    let html = '<div class="col-6 fs-5">';
     // html += '<td>' + coffee.id + '</td>';
     html += '<strong>' + coffee.name + '</strong>';
-    html += ' <span class="text-muted fs-6">' + coffee.roast + '</span>';
+    html += ' <span class="text-muted">' + coffee.roast + '</span>';
     html += '</div>';
 
     return html;
@@ -84,6 +84,13 @@ coffeeInput.addEventListener("input", updateCoffees2)
 
 roastSelection.addEventListener('input', updateCoffees);
 
-let addedRoastedSelectionEl = document.getElementById("add-roast-selection").value;
+let addedRoastedSelectionEl = document.getElementById("add-roast-selection");
+let addedCoffeeNameEl = document.getElementById("added-coffee-name")
 let addCoffeeSubmitEl = document.getElementById("add-coffee-submit")
+addCoffeeSubmitEl.addEventListener('click', function(e) {
+    e.preventDefault()
+    let newCoffee = {name: addedCoffeeNameEl.value, roast: addedRoastedSelectionEl.value}
+    coffees.push(newCoffee)
+    updateCoffees(e)
+})
 //------------------------------------------------------------------

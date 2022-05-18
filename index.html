@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="mb-5">
+<header class="mb-2">
     <h1 class="text-center py-3">Coffee!</h1>
     <br>
 </header>
 
 <!---- Left Container----->
-<main class="container row mx-auto mt-5 align-items-start">
-    <div class="col-12 col-md-6 row " id="coffees">
+<main class="container row mx-auto align-items-start">
+    <div class="col-12 col-md-4 row " id="coffees">
     </div>
 
-    <!-----Right Container------->
-    <section class="col-12 col-md-6">
+    <!-----Middle Container------->
+    <section class="col-12 col-md-4 mx-auto">
         <form>
 <!--            choose coffee by roast-->
             <label for="roast-selection">Roast</label>
@@ -36,14 +36,14 @@
                 <option>dark</option>
             </select>
 
+
 <!--            choose coffee by name-->
             <label for="coffee-name">Coffee Name</label>
             <input type="text" class="form-control" id="coffee-name">
 
 
 <!--            create new coffee-->
-
-            <input id="submit" type="submit" class="btn btn-warning w-100 "/>
+            <input id="submit" type="submit" class="btn btn-warning w-100 mt-2"/>
         </form>
 
 
@@ -67,13 +67,16 @@
                 <input type="text" class="form-control" id="added-coffee-name">
 
                 <!--    create new coffee   -->
-                <input id="add-coffee-submit" type="submit" class="btn btn-warning w-100 "/>
+                <input id="add-coffee-submit" type="submit" class="btn btn-warning w-100 mt-2"/>
             </form>
         </div>
-
-
     </section>
-</main>
+    <div class="card col-12 col-md-4 ms-auto" style="width: 20rem;">
+        <img src="img/staycup.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Stay a while and try our in house brand, it will curl your toes!</p>
+        </div>
+    </div></main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
