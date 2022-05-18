@@ -4,6 +4,8 @@ header h1{
     font-size: 6em;
     color: white;
     text-shadow: 4px 4px black;
+    background-image: url("img/coffeHeader.jpg");
+    background-size: contain;
 }
 
 .container{
@@ -12,8 +14,3 @@ header h1{
     font-size: 1.5em;
 }
 
-body{
-    background-image: url("img/cofeebackground.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
