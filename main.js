@@ -36,6 +36,8 @@ function updateCoffees(e) {
     }
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
+//---------------------------- ADDED JS ----------------------------
 //  search input function
 function updateCoffees2(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -48,6 +50,7 @@ function updateCoffees2(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+//------------------------------------------------------------------
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -71,9 +74,12 @@ var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
-let coffeeInput = document.getElementById("coffeeName");
-coffeeInput.addEventListener("input", updateCoffees2)
-
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+
+//---------------------------- ADDED JS ----------------------------
+let coffeeInput = document.getElementById("coffeeName");
+coffeeInput.addEventListener("input", updateCoffees2)
+
+//------------------------------------------------------------------
