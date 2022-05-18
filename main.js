@@ -82,5 +82,8 @@ submitButton.addEventListener('click', updateCoffees);
 let coffeeInput = document.getElementById("coffee-name");
 coffeeInput.addEventListener("input", updateCoffees2)
 
-roastSelection.addEventListener('input', updateCoffees)
+roastSelection.addEventListener('input', updateCoffees);
+
+let addedRoastedSelectionEl = document.getElementById("add-roast-selection").value;
+let addCoffeeSubmitEl = document.getElementById("add-coffee-submit")
 //------------------------------------------------------------------
