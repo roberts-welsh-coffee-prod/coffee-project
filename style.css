@@ -17,3 +17,9 @@ header h1{
 .card {
     font-family: 'Lobster', cursive;
 }
+
+.btn{
+    background-color: #B07032;
+    font-weight: bold;
+    color: white;
+}
