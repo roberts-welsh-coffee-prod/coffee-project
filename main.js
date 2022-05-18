@@ -70,9 +70,9 @@ let coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-let tbody = document.querySelector('#coffees');
+let tbody = document.querySelector('#coffees'); // an empty container for coffees object to be displayed by JS.
 let submitButton = document.querySelector('#submit');
-let roastSelection = document.querySelector('#roast-selection');
+let roastSelection = document.querySelector('#roast-selection'); // grabs <select> dropdown tag in <form>.
 
 tbody.innerHTML = renderCoffees(coffees);
 

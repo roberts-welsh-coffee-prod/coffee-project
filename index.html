@@ -35,15 +35,43 @@
                 <option>medium</option>
                 <option>dark</option>
             </select>
-            <label for="submit">Coffee Name</label>
 
 <!--            choose coffee by name-->
+            <label for="coffee-name">Coffee Name</label>
             <input type="text" class="form-control" id="coffee-name">
 
 
 <!--            create new coffee-->
+
             <input id="submit" type="submit" class="btn btn-warning w-100 "/>
         </form>
+
+
+
+<!--            ADD COFFEE FEATURE-->
+        <div>
+            <h3 class="text-center mt-4">Add a Coffee</h3>
+            <form>
+                <!--    state coffee roast  -->
+                <label for="add-roast-selection">Roast</label>
+                <select id="add-roast-selection" class="form-select">
+                    <option>all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <label for="submit">Name</label>
+
+                <!--    state coffee name   -->
+                <label for="added-coffee-name">Coffee Name</label>
+                <input type="text" class="form-control" id="added-coffee-name">
+
+                <!--    create new coffee   -->
+                <input id="add-coffee-submit" type="submit" class="btn btn-warning w-100 "/>
+            </form>
+        </div>
+
+
     </section>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
