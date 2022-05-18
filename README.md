@@ -34,19 +34,19 @@ improvements to it.
 
 **Bonus**
 
-- Add an option to select all roasts for roast type
+- Add an option to select all roasts for roast type ✅
 
-- Make your name search case insensitive
+- Make your name search case insensitive ✅
 
 - Allow the user to add new coffees to the page
 
     Create another form on the page that has an input for the coffee name, and
     a select to choose the coffee roast. When the form is submitted, the new
-    coffee should appear on the page. (*Note that any new coffees you add will
+    coffee should appear on the page. ✅  (*Note that any new coffees you add will
     be lost when you refresh the page, for an extra challenge, research
     how `localStorage` works and see if you can find a way to persist the data*)
 
-- Style it!
+- Style it! ✅
 
     The page looks pretty plain as it is, and the refactoring we did above to
     use `div`s for coffees should give us more flexibility in styling. (*Hint:
