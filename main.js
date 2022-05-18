@@ -1,7 +1,7 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<div class="col-6">';
+    let html = '<div class="col-6">';
     // html += '<td>' + coffee.id + '</td>';
     html += '<strong>' + coffee.name + '</strong>';
     html += ' <span class="text-muted fs-6">' + coffee.roast + '</span>';
@@ -11,8 +11,8 @@ function renderCoffee(coffee) {
 }
 
 function renderCoffees(coffees) {
-    var html = '';
-    for(var i = coffees.length - 1; i >= 0; i--) {
+    let html = '';
+    for(let i = coffees.length - 1; i >= 0; i--) {
         html += renderCoffee(coffees[i]);
     }
     return html;
@@ -20,8 +20,8 @@ function renderCoffees(coffees) {
 
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
+    let selectedRoast = roastSelection.value;
+    let filteredCoffees = [];
     if (selectedRoast === "all") {
         for (const coffee of coffees) {
             filteredCoffees.push(coffee);
@@ -42,7 +42,7 @@ function updateCoffees(e) {
 function updateCoffees2(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let coffee1 = coffeeInput.value.toLowerCase();
-    var filteredCoffees = [];
+    let filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.name.toLowerCase().includes(coffee1)) {
             filteredCoffees.push(coffee);
@@ -53,7 +53,7 @@ function updateCoffees2(e) {
 //------------------------------------------------------------------
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
-var coffees = [
+let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
     {id: 3, name: 'Cinnamon', roast: 'light'},
@@ -70,9 +70,9 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
-var roastSelection = document.querySelector('#roast-selection');
+let tbody = document.querySelector('#coffees');
+let submitButton = document.querySelector('#submit');
+let roastSelection = document.querySelector('#roast-selection');
 
 tbody.innerHTML = renderCoffees(coffees);
 
