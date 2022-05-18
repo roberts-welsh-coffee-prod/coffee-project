@@ -5,7 +5,7 @@ header h1{
     color: white;
     text-shadow: 4px 4px black;
     background-image: url("img/coffeHeader.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 
 .container{
