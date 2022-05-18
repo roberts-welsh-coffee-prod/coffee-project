@@ -79,7 +79,8 @@ tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 
 //---------------------------- ADDED JS ----------------------------
-let coffeeInput = document.getElementById("coffeeName");
+let coffeeInput = document.getElementById("coffee-name");
 coffeeInput.addEventListener("input", updateCoffees2)
 
+roastSelection.addEventListener('input', updateCoffees)
 //------------------------------------------------------------------

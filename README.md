@@ -20,17 +20,17 @@ improvements to it.
     Tables are a little old school, you need to refactor the code so that each
     coffee is displayed in a `div` that contains a heading displaying the coffee
     name, and the type of roast in a paragraph. Don't display the ids, these are
-    only for our application's internal use
+    only for our application's internal use ✅
 
 - When the page loads, the coffees should be sorted by their ids in ascending
-  order
+  order ✅
 
 - Add functionality to search through the coffees by name, and display only the
   coffees that match the provided search term (You will need to add an input
-  field to the existing form for this)
+  field to the existing form for this) ✅
 
 - Add functionality to update the displayed coffee as the user types into the
-  search box, or as soon as they select an option from the select.
+  search box, or as soon as they select an option from the select. ✅
 
 **Bonus**
 
